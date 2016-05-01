@@ -74,7 +74,7 @@ public class NimbleNogginConfiguration : QuickConfiguration {
                 let value = results[segment]
 
                 if let result = value as? String {
-                    testResult = result == "P" ? "\u{001B}[1m\u{001B}[032;m[PASSED]\u{001B}[0m" : "\u{001B}[1m\u{001B}[031;m[FAILED]\u{001B}[0m"
+                    testResult = result == "P" ? "[PASSED] ✅" : "[FAILED] ❌ "
                 }
 
                 print("\(prefix)\(segment) \(testResult)")
